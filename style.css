@@ -12,7 +12,6 @@
 body{
     line-height: 1.5;
     font-family: 'Roboto Mono', monospace;
-    overflow-x: hidden;
 }
 
 a{
@@ -210,15 +209,33 @@ ul.social li a{
 
 /* MEDIA QUERIES */
 @media(max-width: 768px){
-    #showcase-d{
+
+    #navbar .social{
         display: none;
+    }
+
+    #showcase-d .headphones{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #showcase-d .headphones .card{
+        margin-bottom: 3rem;
     }
 
     #showcase-e .wrapper{
         grid-template-columns: 1fr;
     }
 
-    #showcase-f{
-        display: none;
+    #showcase-f .container{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    #navbar .container{
+        display: flex;
+        flex-direction: column;
     }
 }
