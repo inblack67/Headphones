@@ -12,6 +12,7 @@
 body{
     line-height: 1.5;
     font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
 }
 
 a{
@@ -26,6 +27,7 @@ ul{
 header{
     background: url('./img/head4.jpg') center center/cover no-repeat;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 img{
@@ -35,6 +37,8 @@ img{
 .container{
     max-width: 1200px;
     margin: auto;
+    overflow: hidden;
+    padding: 0 1.5rem;
 }
 
 .py-1{ padding: 1.5rem 0; }
@@ -60,6 +64,12 @@ img{
 
 .text-center{
     text-align: center;
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
 }
 
 .btn-effect:hover{
@@ -160,6 +170,7 @@ ul.social li a{
 #showcase-d .headphones {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
     align-items: center;
     justify-content: center;
 }
@@ -185,18 +196,29 @@ ul.social li a{
     color: white;
 }
 
-
-#footer{
-    background: var(--secondary-color);
+#parallaxed .social{
     padding: 1rem;
 }
-
-#footer .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#parallaxed .social a{
+    padding-left: 1rem;
 }
 
-#footer .container a{
-    padding-left: 1rem;
+#parallaxed p{
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+@media(max-width: 768px){
+    #showcase-d{
+        display: none;
+    }
+
+    #showcase-e .wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    #showcase-f{
+        display: none;
+    }
 }

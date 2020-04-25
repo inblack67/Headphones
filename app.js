@@ -6,4 +6,9 @@ window.addEventListener('scroll', () => {
     else {
         navbar.style.background = '';
     }
-})
+});
+
+
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 700
+});
