@@ -1,0 +1,202 @@
+:root{
+    --primary-color: #F7DC6F;
+    --secondary-color: #F8C471;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background: url('./img/head4.jpg') center center/cover no-repeat;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.py-1{ padding: 1.5rem 0; }
+.py-2{ padding: 2rem 0; }
+.py-3{ padding: 3rem 0; }
+
+.l-heading{
+    font-size: 4rem;
+}
+
+.m-heading{
+    font-size: 3rem;
+}
+
+.s-heading{
+    font-size: 2rem;
+}
+
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-effect:hover{
+    transition: all 1s ease-in-out;
+    color: white;
+    background: black;
+}
+
+.icon-effect:hover{
+    transition: all 1s ease-in-out;
+    color: white;
+}
+
+.btn-light{
+    text-transform: uppercase;
+    display: inline-block;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 1rem;
+}
+
+.btn-secondary{
+    text-transform: uppercase;
+    display: inline-block;
+    background: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 1rem;
+}
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    transition: background 1s ease-in-out;
+}
+
+#navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+
+#navbar .container a,
+#navbar .container ul {
+    margin: 1rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul.social li a{
+    padding: 1rem;
+}
+
+#showcase-c{
+    background: var(--secondary-color);
+    color: white;
+}
+
+#showcase-d{
+    margin-bottom: 2rem;
+}
+
+
+#showcase-d .headphones .headphone-item{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30rem;
+    background: var(--secondary-color);
+}
+
+#showcase-d .headphones .card{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#showcase-d .headphones .card img{
+    border-radius: 10px;
+}
+
+#showcase-d .headphones .card .container{
+    margin-top: 1rem;
+}
+
+#showcase-d .headphones {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase-e .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+#showcase-e h1{
+    margin-bottom: 1.5rem;
+}
+
+#showcase-f{
+    background: var(--secondary-color);
+}
+
+#showcase-f .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+
+#footer{
+    background: var(--secondary-color);
+    padding: 1rem;
+}
+
+#footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .container a{
+    padding-left: 1rem;
+}
